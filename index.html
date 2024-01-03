@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Computer Online Store</title>
+</head>
+
+<body>
+    <div class="head">
+        <div class="text">
+            <h1>Computer Online Store</h1>
+            <p>Welcome To Our Store</p>
+            <div id="see-more-button"> <a id="myAnchor" href="#my-section">See More</a></div>
+        </div>
+    </div>
+
+    <section id="my-section">
+        <div id="space1"> </div>
+        <div class="container">
+            <div class="product"
+                onclick="showModel('Hp Laptop', 'Newest Flagship HP 14 HD Thin & Light Laptop Computer PC- 14 Micro-Edge Display 10th Gen Intel Quad-Core i5-1035G1 8GB RAM 256GB PCIe SSD + 16GB...', '$450')">
+                <img src="./icons/laptop1.jpg" alt="Hp Laptop" width="300">
+                <h3>Hp Laptop</h3>
+                <p>$450</p>
+            </div>
+            <div class="product"
+                onclick="showModel('Windows 11 Laptop', 'Windows 11 Laptop, Intel Quad-Core N95 Processor, 1080P IPS Display, WiFi 5, BT 5.0, Ethernet, Fingerprint, USB Type-C', '$660')">
+                <img src="./icons/laptop2.jpg" alt="Windows 11 Laptop" width="300">
+                <h3>Windows 11 Laptop</h3>
+                <p>$660</p>
+            </div>
+            <div class="product"
+                onclick="showModel('WIPEMIK Laptop Computer', 'WIPEMIK Laptop Computer, 15.6 Inch Laptop, 12GB LPDDR5 RAM, 512GB NVMe SSD Windows 11 Laptop, Intel Quad-Core N95 Processor, 1080P IPS Display, WiFi 5, BT 5.0, Ethernet, Fingerprint, USB Type-C', '$860')">
+                <img src="./icons/laptop3.jpg" alt="WIPEMIK Laptop Computer" width="300">
+                <h3>WIPEMIK Laptop Computer</h3>
+                <p>$860</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="model" id="productModel">
+        <div class="model-content">
+            <span class="close-btn" onclick="closeModel()">&times;</span>
+            <h2 id="modelTitle"></h2>
+            <p id="modelDescription"></p>
+            <p id="modelPrice"></p>
+        </div>
+    </div>
+    <footer>
+        <h1> You Can Contact With Us!</h1>
+        <div class="footer-item">
+            <a href="https://web.whatsapp.com/"> <img src="./icons/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+        <div class="footer-item">
+            <a href="https://instagram.com"> <img src="./icons/insta_icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+
+    <script>
+        function showModel(title, description, price) {
+            document.getElementById('modelTitle').innerText = title;
+            document.getElementById('modelDescription').innerText = description;
+            document.getElementById('modelPrice').innerText = price;
+            document.getElementById('productModel').style.display = 'block';
+        }
+
+        function closeModel() {
+            document.getElementById('productModel').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

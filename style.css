@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: dimgray;
+    min-height: 800px;
+    background-image: url("https://4.bp.blogspot.com/-1FjIS94wDo0/WbVfx4rZLzI/AAAAAAABAQo/Y7qHnXvYODgp6cu8UM30NzXffPjKZvVzACLcBGAs/s1600/Hd-Laptop-wallpapers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    grid-area: foot;
+    background-color: rgb(80, 44, 44);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(100, 51, 35);
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    grid-area: k2;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-family: "Bahnschrift", "Ink Free";
+    padding: 50px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.product:hover {
+    background-color: #e9e9e9;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.model {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.model-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#space1 {
+    grid-area: b1;
+}
+
+#myAnchor {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 4px solid whitesmoke;
+    padding: 14px;
+}
+
+#see-more-button {
+    margin-top: 40px;
+}
