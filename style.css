@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    background-color: rgb(149, 80, 57);
+    display: flex;
+    flex-direction: column;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -23,32 +30,10 @@ img {
     background-size: cover;
 }
 
-footer {
-    grid-area: foot;
-    background-color: rgb(80, 44, 44);
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 40px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-.footer-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-body {
-    height: 100vh;
-    background-color: rgb(100, 51, 35);
-    display: flex;
-    flex-direction: column;
+@media (max-width: 768px) {
+    .head {
+        min-height: 400px;
+    }
 }
 
 .text {
@@ -60,14 +45,34 @@ body {
     padding: 50px;
 }
 
-h1 {
-    font-size: 60px;
+@media (max-width: 768px) {
+    .text {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h5 {
+        font-size: 25px;
+    }
 }
 
 .container {
     max-width: 800px;
     margin: auto;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .product {
+        margin-bottom: 20px;
+    }
 }
 
 .product {
@@ -108,6 +113,14 @@ h1 {
     border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+    .model-content {
+        width: 90%;
+        max-width: 400px;
+        padding: 10px;
+    }
+}
+
 .close-btn {
     position: absolute;
     top: 10px;
@@ -115,8 +128,45 @@ h1 {
     cursor: pointer;
 }
 
-#space1 {
-    grid-area: b1;
+footer {
+    grid-area: foot;
+    background-color: rgb(160, 90, 57);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 20px;
+    }
+}
+
+.footer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#see-more-button {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    #see-more-button {
+        margin-top: 20px;
+    }
+
+    #myAnchor {
+        padding: 10px;
+        font-size: 20px;
+    }
 }
 
 #myAnchor {
@@ -129,6 +179,6 @@ h1 {
     padding: 14px;
 }
 
-#see-more-button {
-    margin-top: 40px;
+#space1 {
+    grid-area: b1;
 }
